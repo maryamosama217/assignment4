@@ -1,0 +1,5 @@
+first :download the data from the defined URL
+second: unzip the file
+third:define the file names in train and test data sets
+forth : create emoty lists for both training and testing
+fifth: use for loop to read each file as a table and add it to the list
