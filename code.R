@@ -6,7 +6,8 @@ trainfilenames = c('body_acc_x_train','body_acc_y_train','body_acc_z_train','bod
 train=list()
 for(i in trainfilenames){
   path=paste0('C:/Users/Maryam/Documents/data/assignment4/UCI HAR Dataset/train/Inertial Signals/',i,'.txt')
-  train[i]=read.table(path)}
+  train[i]=read.table(path)
+  write.csv(train[i],file = path)}
 #for example
 file[["body_acc_x_train"]][1]
 test=list()
@@ -14,4 +15,5 @@ testfilenames = c('body_acc_x_test','body_acc_y_test','body_acc_z_test','body_gy
                   'body_gyro_y_test','body_gyro_z_test','total_acc_x_test','total_acc_y_test','total_acc_z_test')
 for(i in testfilenames){
   path=paste0('C:/Users/Maryam/Documents/data/assignment4/UCI HAR Dataset/test/Inertial Signals/',i,'.txt')
-  train[i]=read.table(path)}#ana zeh4t
+  test[i]=read.table(path)
+  write.csv(test[i],file = path)}
